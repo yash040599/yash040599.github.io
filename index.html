@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Rupevo has moved</title>
+<script>
+const oldRoot = '/Rupevo';
+const path = location.pathname;
+if (path === oldRoot || path.startsWith(oldRoot + '/') || path === '/') {
+  const suffix = path === '/' ? '/' : path.slice(oldRoot.length) || '/';
+  location.replace('https://rupevo.yash040599.workers.dev' + suffix + location.search + location.hash);
+}
+</script></head><body><h1>Rupevo has moved</h1><p><a href="https://rupevo.yash040599.workers.dev/">Continue to Rupevo</a></p></body></html>
